@@ -1,0 +1,44 @@
+.trust {
+  margin-top: 15.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.625rem;
+    color: $color-aqua-700;
+  }
+
+  &-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 57.5rem) {
+  .trust{
+    padding: 2.5rem;
+    margin-top: 9.375rem;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .trust{
+    padding: 2.5rem;
+    margin-top: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .trust{
+    padding: 2.5rem;
+    margin-top: 3.125rem;
+  }
+}

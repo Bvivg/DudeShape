@@ -1,0 +1,134 @@
+.footer-bg {
+  background: $color-aqua-600;
+}
+
+.footer {
+  margin-top: 140px;
+  padding: 80px 0 60px 0;
+  display: flex;
+  gap: 20px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color-white-50;
+    }
+
+    p {
+      margin-top: 30px;
+      max-width: 337px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-white-50;
+    }
+
+    &__follow {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-white-50;
+      }
+
+      &-links {
+        display: flex;
+        gap: 15px;
+
+        &__icon {
+          width: 20px;
+          height: 20px;
+          fill: $color-white-50;
+        }
+      }
+    }
+  }
+
+  &-nav {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-white-50;
+      }
+
+      &-link {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: $color-white-50;
+        }
+
+        p {
+          max-width: 240px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: $color-white-50;
+        }
+
+        &__input {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 12px 10px 22px;
+          background: $color-white-50;
+          border-radius: 8px;
+
+          input {
+            color: $color-aqua-700;
+          }
+
+          &-icon {
+            width: 16px;
+            height: 16px;
+            padding: 6px;
+            border-radius: 50%;
+            background: $color-yellow-50;
+            fill: $color-white-50;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer{
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-nav{
+    gap: 50px;
+  }
+}

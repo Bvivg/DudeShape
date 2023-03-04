@@ -1,0 +1,89 @@
+.about-us {
+  margin-top: 8.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: $color-aqua-700;
+    }
+
+    &__desc {
+      margin-top: 1.25rem;
+      max-width: 30.5rem;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+      color: $color-black-200;
+    }
+
+    &__items {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+
+    &__item {
+      display: flex;
+      gap: 1.25rem;
+
+      &-icon {
+        width: 3.125rem;
+        height: 3.125rem;
+        fill: $color-aqua-700;
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375rem;
+
+        h1 {
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 1.625rem;
+          color: $color-aqua-700;
+        }
+
+        p {
+          max-width: 19.125rem;
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 1.625rem;
+          color: $color-black-200;
+        }
+      }
+    }
+  }
+
+  &-image {
+    margin-left: auto;
+    max-width: 37.25rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 57.5rem) {
+  .about-us{
+    margin-top: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    flex-direction: column;
+
+    &-image{
+      margin-top: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.copyright {
+  border-top: 1px solid $color-aqua-500;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background: $color-aqua-600;
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-white-50;
+  }
+}
